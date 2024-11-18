@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222;
+    font-family: 'Shantell Sans', cursive;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.container h1 {
+    color: rgb(252, 194, 3);
+    text-shadow:
+        -2px -2px 0 rgb(19, 131, 151), /* Sombras nas quatro direções */
+         2px  2px 0 rgb(19, 131, 151),
+        -2px -2px 0 rgb(19, 131, 151),
+         2px  2px 0 rgb(19, 131, 151);
+    text-align: center;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    font-size: 3.125rem;
+}
+
+.busca {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  box-shadow: 10px 20px 40px rgba(255, 255, 255, 0.10);
+  padding-inline: 1.87rem;
+  border-radius: 0.625rem;
+  width: 0%;
+  color: #615e5e;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+  transition: 0.5s;
+}
+
+
+.busca:hover {
+  background-color: white;
+  width: 30%;
+}
+
+.busca-container {
+  margin-block: 2.5rem;
+  padding: 0.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.busca-container svg{
+  color: white;
+}
+
+.pokemons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18.75rem, auto));
+    justify-content: center;
+    gap: 1.25rem;
+    padding-bottom: 0.625rem;
+}
+
+.card {
+    max-width: 18.75rem;
+    padding: 1.25rem;
+    color: #222;
+    text-align: center;
+    border-radius: 1.25rem;
+    background-color: white;
+    overflow: hidden;
+}
+
+.card-image{
+    max-width:10rem;
+
+}
+
+.type{
+    color:#615e5e;
+    padding-top: 0.313rem;
+    position: relative;
+    top:2.813rem;
+    transition: top 0.5s;
+    font-size: 1.25rem;
+}
+
+.card:hover .type {
+    cursor: pointer;
+    top: 0;
+}
+
+.fire {
+    background-color: rgb(235, 120, 67);
+}
+
+.grass {
+    background-color: aquamarine;
+  }
+  
+  .water {
+    background-color: transparent;
+    backdrop-filter: blur(90px);
+    backdrop-filter: brightness(95%);
+    border: 2px solid rgba(255, 255, 255, 0.10);
+  }
+  
+  .water .type{
+    color: white;
+  }
+  
+  .card.water{
+    color: white;
+  }
+  
+  .bug {
+    background-color: #f8d5a3;
+  }
+  
+  .normal {
+    background-color: white;
+  }
+  
+  .electric {
+    background-color: #f2eac6;
+  }
+  
+  .ground {
+    background-color: #eeab9d;
+  }
+  
+  .poison {
+    background-color: #b1e9bc;
+  }
+  
+  .fairy {
+    background-color: #f1ddf5;
+  }
